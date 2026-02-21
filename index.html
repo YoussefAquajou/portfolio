@@ -1,4 +1,90 @@
 <!-- FILE: index.html -->
+<!-- index.html - Professional portfolio main page -->
+<!doctype html>
+<!-- document type declaration -->
+<html lang="en">
+<!-- root element with language -->
+<head>
+  <!-- head: meta + title + links -->
+  <meta charset="utf-8">
+  <!-- character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- responsive viewport -->
+  <title>Jack Darif — Portfolio</title>
+  <!-- page title shown in browser tab -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- link to external stylesheet -->
+</head>
+<body>
+  <!-- site header with navigation -->
+  <header class="site-header">
+    <!-- container for logo and nav -->
+    <div class="container header-inner">
+      <!-- logo / brand -->
+      <a class="logo" href="#">Jack Darif</a>
+      <!-- navigation list -->
+      <nav>
+        <!-- unordered list of nav links -->
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- hero section / introduction -->
+  <section id="hero" class="hero">
+    <!-- main container for hero content -->
+    <div class="container hero-inner">
+      <h1>Hi, I'm <span class="accent">Jack</span> — a Software Engineer.</h1>
+      <!-- short tagline -->
+      <p> I build reliable, maintainable web applications and clean code. </p>
+      <!-- call to action buttons -->
+      <p class="cta">
+        <a class="btn" href="#projects">View Projects</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- about section -->
+  <section id="about" class="about">
+    <!-- container -->
+    <div class="container">
+      <h2>About me</h2>
+      <!-- short bio -->
+      <p>I'm a web developer focused on building accessible, performance-minded applications. I like clear APIs, tests, and good documentation.</p>
+    </div>
+  </section>
+
+  <!-- projects grid -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Selected Projects</h2>
+      <!-- grid of project cards -->
+      <div class="grid">
+        <!-- project card 1 -->
+        <article class="card">
+          <h3>Project One</h3>
+          <p>Brief description of the project, tech stack and impact.</p>
+          <p class="card-actions"><a href="#" target="_blank">Live</a> · <a href="#" target="_blank">Code</a></p>
+        </article>
+        <!-- project card 2 -->
+        <article class="card">
+          <h3>Project Two</h3>
+          <p>Brief description of the project, tech stack and impact.</p>
+          <p class="card-actions"><a href="#" target="_blank">Live</a> · <a href="#" target="_blank">Code</a></p>
+        </article>
+        <!-- project card 3 -->
+        <article class="card">
+          <h3>Project Three</h3>
+          <p>Brief description of the project, tech stack and impact.</p>
+          <p class="card-actions"><a href="#" target="_blank">Live</a> · <a href="#" target="_blank">Code</a></p>
+        </article>
+      </div>
+    </div>
   </section>
 
   <!-- contact section with a simple form -->

@@ -1,4 +1,46 @@
 /* FILE: styles.css */
+/* styles.css - basic, clean, responsive styles */
+/* Root variables */
+:root {
+  /* primary accent color */
+  --accent: #0b6efd;
+  /* neutral background */
+  --bg: #ffffff;
+  /* text color */
+  --text: #111827;
+  /* muted text */
+  --muted: #6b7280;
+  /* container max width */
+  --max-w: 1100px;
+}
+
+/* global reset and box-sizing */
+* { box-sizing: border-box; }
+html,body { height:100%; }
+body {
+  /* background and font defaults */
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+/* utility container to center content */
+.container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* header styles */
+.site-header {
+  border-bottom: 1px solid #e6e7eb;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
 .header-inner { display:flex; align-items:center; justify-content:space-between; }
 .logo { font-weight:700; text-decoration:none; color:var(--text); }
 .nav-list { list-style:none; display:flex; gap:1rem; margin:0; padding:0; }
