@@ -1,0 +1,43 @@
+/* FILE: styles.css */
+.header-inner { display:flex; align-items:center; justify-content:space-between; }
+.logo { font-weight:700; text-decoration:none; color:var(--text); }
+.nav-list { list-style:none; display:flex; gap:1rem; margin:0; padding:0; }
+.nav-list a { text-decoration:none; color:var(--muted); }
+
+/* hero section */
+.hero { padding:3rem 0; }
+.hero h1 { margin:0 0 0.5rem 0; font-size:2rem; }
+.hero p { margin:0 0 1rem 0; color:var(--muted); }
+.accent { color:var(--accent); }
+
+/* buttons */
+.btn {
+  display:inline-block;
+  padding:0.6rem 1rem;
+  border-radius:8px;
+  text-decoration:none;
+  background:var(--accent);
+  color:#fff;
+  border: none;
+  cursor: pointer;
+}
+.btn.ghost { background: transparent; color:var(--accent); border:1px solid var(--accent); }
+
+/* projects grid */
+.grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:1rem; margin-top:1.5rem; }
+.card { border:1px solid #e6e7eb; padding:1rem; border-radius:10px; }
+.card h3 { margin-top:0; }
+.card-actions a { text-decoration:none; color:var(--accent); }
+
+/* contact form styles */
+.contact label { display:block; margin-top:1rem; font-weight:600; }
+.contact input, .contact textarea { width:100%; padding:0.6rem; margin-top:0.3rem; border:1px solid #d1d5db; border-radius:6px; }
+.contact button { margin-top:1rem; }
+
+/* footer */
+.site-footer { border-top:1px solid #e6e7eb; padding:1rem 0; text-align:center; color:var(--muted); }
+
+/* responsive tweaks */
+@media (min-width:768px) {
+  .hero h1 { font-size:2.4rem; }
+}

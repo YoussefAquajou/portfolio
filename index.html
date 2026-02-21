@@ -1,11 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+<!-- FILE: index.html -->
+  </section>
+
+  <!-- contact section with a simple form -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <!-- contact form (non-functional without backend) -->
+      <form id="contactForm">
+        <!-- name input -->
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" required>
+
+        <!-- email input -->
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@domain.com" required>
+
+        <!-- message textarea -->
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="How can I help?" required></textarea>
+
+        <!-- submit button -->
+        <button type="submit" class="btn">Send message</button>
+        <!-- feedback area filled by script.js -->
+        <p id="formStatus" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Jack Darif — Built with ❤️ and attention to detail.</p>
+    </div>
+  </footer>
+
+  <!-- link to JavaScript file -->
+  <script src="script.js"></script>
+  <!-- end of body -->
 </body>
 </html>
