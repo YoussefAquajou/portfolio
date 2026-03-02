@@ -119,3 +119,32 @@ body {
   flex-direction: column;
   gap: 0.35rem;
 }
+
+/* education section */
+.education .muted {
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+.edu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.edu-item {
+  border: 1px solid #e6e7eb;
+  padding: 1rem;
+  border-radius: 10px;
+  background: #fff;
+}
+.edu-item h3 {
+  margin: 0 0 0.3rem 0;
+  font-size: 1.05rem;
+}
+.course-list {
+  margin: 0.5rem 0 0 1rem;
+  padding: 0;
+  list-style: disc;
+  color: var(--text);
+  font-size: 0.95rem;
+}
